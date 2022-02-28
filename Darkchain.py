@@ -26,9 +26,9 @@ def input_keyword():
 
 def API(config,keyword,size,full):
     if full =='1':
-        url='https://fofa.so/api/v1/search/all?email={}&key={}&qbase64={}&size={}'.format(config[0].replace('\n',''),config[1],keyword,size)
+        url='https://fofa.info/api/v1/search/all?email={}&key={}&qbase64={}&size={}'.format(config[0].replace('\n',''),config[1],keyword,size)
     else:
-        url = 'https://fofa.so/api/v1/search/all?email={}&key={}&qbase64={}&size={}&full=true'.format(config[0].replace('\n', ''),
+        url = 'https://fofa.info/api/v1/search/all?email={}&key={}&qbase64={}&size={}&full=true'.format(config[0].replace('\n', ''),
                                                                                             config[1], keyword, size)
     print('获取资产中...')
     try:
